@@ -174,7 +174,7 @@ for f in sys.argv[1:]:
         icon_name = toml_info['meta']['icon']
         background_color = ICON_COLORS[icon_name]
     except KeyError as exc:
-        print(str(exc))
+        print(exc)
         error(f'missing or incorrect icon in {toml_path}')
 
     try:
